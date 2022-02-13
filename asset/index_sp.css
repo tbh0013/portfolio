@@ -1,0 +1,119 @@
+/* CSS Document */
+
+html {
+    min-width: 300px;
+}
+
+
+body {
+    font-size: 1.6rem;
+}
+
+nav li {
+    font-size: 2.0rem;
+    margin: auto;
+}
+
+#about,
+#skill,
+#works {
+    margin: 50px auto 80px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2,
+#myname {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+#about,
+#skill,
+#works {
+    display: block;
+    padding-bottom: 30px;
+}
+
+#mypicture {
+    width: 60%;
+}
+
+#myname,
+#profile,
+#hobby {
+    width: 90%;
+    margin: 50px auto;
+}
+
+#profile {
+    margin: 0 auto;
+}
+
+#profile p {
+    font-size: 1.4rem;
+}
+
+.flex_break {
+    width: 100%;
+    margin: auto;
+}
+
+#skillsheet {
+    display: block;
+    margin: auto;
+}
+
+.flex_skill {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.flex_skill2 {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#works {
+    padding-bottom: 10px;
+}
+
+.mainworkslist li {
+    display: block;
+}
+
+.pageview {
+    width: 100%;
+}
+
+.workdetail {
+    width: 80%;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+.view more a {
+    font-size: 1.4rem;
+}
+
+.worksslide {
+    display: block;
+}
+
+.worksslide li {
+    width: 70%;
+    margin: 50px auto;
+}
+
+footer {
+    font-size: 1.4rem;
+}

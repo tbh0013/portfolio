@@ -1,0 +1,492 @@
+/* CSS Document */
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: url(./bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222;
+    font-size: 62.5%;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    min-width: 300px;
+    width: 100%;
+    overflow: auto;
+}
+
+
+body {
+    line-height: 2;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(155, 199, 237, 0.1)), to(rgba(221, 107, 51, 0.5)));
+    background: linear-gradient(rgba(155, 199, 237, 0.1), rgba(171, 201, 245, 0.5));
+    font-size: 1.6rem;
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+
+/*header*/
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+#center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-shadow: black 0 0 5px;
+
+}
+
+
+h1 {
+    font-size: 7.0rem;
+    color: #fff;
+}
+
+header p {
+    margin: 30px auto;
+    font-size: 25px;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(6, 14, 80, 0.808);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    width: 100%;
+    margin: 50px auto;
+
+}
+
+nav li {
+    display: block;
+    font-size: 4.0rem;
+    width: 30%;
+    height: auto;
+    margin: auto 1%;
+    padding: 10px 0;
+    text-shadow:
+        black 1px 1px 2px, black -1px 1px 2px,
+        black 1px -1px 2px, black -1px -1px 2px;
+    color: #fff;
+}
+
+nav a {
+    display: block;
+    padding: 20px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 240, 0.6);
+}
+
+/*各セクション*/
+
+#about,
+#skill,
+#works {
+    margin: 150px auto 50px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 1500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+
+/*about*/
+
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 4.0rem;
+    margin: 30px auto 30px;
+    text-shadow:
+        black 1px 1px 2px, black -1px 1px 2px,
+        black 1px -1px 2px, black -1px -1px 2px;
+    color: #fff;
+
+}
+
+#mypicture {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    margin: 25px auto;
+}
+
+#mypicture img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#myname {
+    width: 70%;
+    height: auto;
+    font-size: 4.0rem;
+    margin: 25px auto;
+}
+
+.flex_break {
+    width: 40%;
+    height: auto;
+    margin: auto 2.5% auto 2.5%;
+}
+
+
+#profile {
+    background-color: rgba(241, 214, 202, 0.993);
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+
+#profile p {
+    padding: 0 10%;
+}
+
+#hobby {
+    background-color: rgba(241, 214, 202, 0.993);
+    text-align: left;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+
+#hobby li {
+    padding: 0 10%;
+
+}
+
+h3 {
+    text-align: center;
+    margin: 20px auto 25px;
+    font-size: 2.5rem;
+}
+
+/*skill*/
+#mainskill {
+    width: 100%;
+}
+
+#skillsheet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.flex_skill {
+    width: 40%;
+    height: auto;
+    padding: 25px 2%;
+    margin: 30px 2.5%;
+    background-color: rgba(241, 214, 202, 0.993);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex_skill2 {
+    width: 40%;
+    height: auto;
+    padding: 25px 2%;
+    margin: 20px 2.5%;
+    background-color: rgba(241, 214, 202, 0.993);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+/*skill*/
+
+
+.skillicon {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin: 25px auto;
+}
+
+.skillicon img {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.skillname {
+    width: 50%;
+    text-align: center;
+}
+
+.stars {
+    color: yellow;
+}
+
+.skilldetail {
+    text-align: left;
+    margin: 30px auto 20px;
+}
+
+.flex_skill2 ul {
+    margin: 30px;
+    text-align: left;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+
+
+/*works*/
+
+
+.mainworkslist li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(241, 214, 202, 0.993);
+    margin: 30px auto 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+h4 {
+    width: 100%;
+    font-size: 2.0rem;
+}
+
+.mainworkslist li h4 {
+    margin: 25px auto;
+}
+
+.pageview {
+    width: 50%;
+    height: auto;
+    /* margin: 25px 2.5%; */
+}
+
+.pageview img {
+    width: 80%;
+}
+
+.workdetail {
+    width: 30%;
+    height: auto;
+    background-color: rgba(233, 179, 156, 0.993);
+    padding: 50px 2.5% 25px;
+    margin: 25px 2.5%;
+}
+
+.viewmore {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.viewmore a {
+    display: block;
+    background-color: rgba(238, 125, 77, 0.993);
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.viewmore a:hover {
+    background-color: rgba(240, 56, 0, 0.74);
+}
+
+#otherworks {
+    margin: 50px auto;
+}
+
+.worksslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: space-around;
+    -ms-flex-align: space-around;
+    align-items: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px 2.5%;
+    width: 95%;
+    height: auto;
+}
+
+.worksslide li {
+    width: 30%;
+    height: auto;
+    margin: 2.5% 1%;
+    position: relative;
+}
+
+.worksslide li a {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(233, 179, 156, 0.993);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.worksslide li img {
+    width: 100%;
+}
+
+.slidehover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(240, 56, 0, 0.74);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slidehover:hover {
+    opacity: 1;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+/*footer*/
+
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 100px;
+    padding: 30px 0 30px;
+    text-align: center;
+}
+
+#afterword {
+    margin: 30px auto 50px;
+}
+
+#copyright {
+    margin: auto;
+}
