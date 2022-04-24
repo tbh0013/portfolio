@@ -354,6 +354,11 @@ h4 {
     margin: 25px auto;
 }
 
+.lk_bold {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
 .pageview {
     width: 50%;
     height: auto;
@@ -364,12 +369,18 @@ h4 {
     width: 80%;
 }
 
-.workdetail {
+.workdetail, .workdetail_doc {
     width: 30%;
     height: auto;
     background-color: rgba(233, 179, 156, 0.993);
     padding: 50px 2.5% 25px;
     margin: 25px 2.5%;
+}
+
+.workdetail_sub {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .viewmore {

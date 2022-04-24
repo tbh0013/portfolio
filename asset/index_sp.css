@@ -101,6 +101,18 @@ h4 {
     font-size: 1.4rem;
 }
 
+.workdetail_sub {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.workdetail_doc {
+    width: 80%;
+    margin-top: 10px;
+    margin: auto;
+}
+
 .view more a {
     font-size: 1.4rem;
 }
