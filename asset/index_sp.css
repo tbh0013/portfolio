@@ -113,6 +113,11 @@ h4 {
     margin: auto;
 }
 
+.viewmore .lk_view {
+    width: 50%;
+}
+
+
 .view more a {
     font-size: 1.4rem;
 }
