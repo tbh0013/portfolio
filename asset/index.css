@@ -176,6 +176,17 @@ h2 {
     height: auto;
     font-size: 4.0rem;
     margin: 25px auto;
+    white-space: nowrap;
+}
+
+.github {
+    width: 30%;
+    display: inline-block;
+}
+
+.github_icon {
+    width: 60%;
+    vertical-align: top;
 }
 
 .flex_break {

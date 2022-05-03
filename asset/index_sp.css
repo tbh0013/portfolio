@@ -55,6 +55,15 @@ h4 {
     margin: 50px auto;
 }
 
+.github {
+    display: block;
+    margin: 0 auto;
+}
+
+.github_icon {
+    width: 40%;
+}
+
 #profile {
     margin: 0 auto;
 }
