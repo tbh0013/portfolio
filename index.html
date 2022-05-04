@@ -16,9 +16,9 @@
             <h1>My Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="#works">WORKS</a></li>
+                    <li><a class="nav_link" href="#about">ABOUT</a></li>
+                    <li><a class="nav_link" href="#skill">SKILL</a></li>
+                    <li><a class="nav_link" href="#works">WORKS</a></li>
                 </ul>
             </nav>
             <p>Shinya Hashimoto</p>
@@ -34,10 +34,10 @@
                     <img src="./asset/mypic.png" alt="写真">
                 </div>
                 <!-- /#mypicture -->
-                <p id="myname">
-                    <ruby>橋<rt>はし</rt>本<rt>もと</rt></ruby>&nbsp;&nbsp;<ruby>慎<rt>しん</rt>也<rt>や</rt></ruby>
-                    <a class="github" href="https://github.com/tbh0013"><img class="github_icon" src="./asset/github.png"></a>
-                </p>
+                <div id="myname">
+                    <div class="namezone"><ruby>橋<rt>はし</rt>本<rt>もと</rt></ruby>&nbsp;&nbsp;<ruby>慎<rt>しん</rt>也<rt>や</rt></ruby></div>
+                    <div class="github"><a href="https://github.com/tbh0013" target="_blank" rel="noopener"><img class="github_icon" src="./asset/github.png"></a></div>
+                </div>
                 <div id="hobby">
                     <h3>趣味・特技</h3>
                     <ul>
@@ -52,14 +52,12 @@
             <div class="flex_break">
                 <div id="profile">
                     <h3>プロフィール</h3>
-                    <p>
-                        私は｢目標達成に向けた継続的な努力｣ができます。<br>
-                        前職では、従業員数が少ないこともあり、営業でありながら、様々な業務を担当しました。その中で、自社サイトの編集業務を任された際に、独学でHTML/CSSとサーバーの仕組みについて学びました。結果、自社サイトよりお問い合わせが可能となり、お客様と円滑に連絡ができるようになりました。
-                        この業務経験から、Webを通して現状をより良いものにしていく事に魅力を感じ、Webエンジニアになることを目標に掲げて努力に励みました。
-                        まず、目標達成の為のプロセスを隈なく調べ上げ、独学でプログラミングを学習しWebサイトの作成に励みました。また、進捗度合を見失わないように、ガントチャートを作成し、客観的に自分の進捗具合を確認できるようにして、自己管理を徹底しました。その結果、現在、PHP、Javascript、HTML/CSSの言語を習得し、下記5つの成果物を作り切ることができました。
-                        この私の強みを活かして、クライアントの要望を忠実に具現化して課題解決をする事、
-                        また、クライアントに新たな提案も行えるWebエンジニアになることを目指しております。
-                    </p>
+                        <p>私はこれまで、Webエンジニアになることを目標に掲げ、努力に励んできました。</p>
+                        <p>目標達成のためにまず、エンジニアになるために必要なスキルセットを徹底的に調べて、学習の方向を定めました。</p>
+                        <p>そこから、日々の学習の積み重ねを大事に、学習した内容は成果物に落とし込むことで、良質なインプットとアウトプットを繰り返しています。</p>
+                        <p>また、持続的に学習に取り組むために、ガントチャートによる客観的な進捗管理や、ポモドーロテクニック(50分学習、10分休憩の反復)を取り入れるなど、日々の学習方法もブラッシュアップしてきました。</p>
+                        <p>そして、実務を想定して、知人・友人をクライアントに、仕様書・ページ構成図・ER図の作成、プロトタイプの実装、コーディング、デプロイ、クライアントへ展開、フィードバックまで一連の流れを経験しました。成果物を自己完結しないで評価してもらうことで緊張感をもって学習に取り込み、その結果、現在、PHP、JavaScript、HTML/CSSの言語を習得し、5つの成果物を作成しました。</p>
+                        <p>今後、仕事においても、常に顧客意識・目標意識をもち、最善の努力を尽くすとともにエンジニアとしての技術・知見を高めて貢献して参ります。</p>
                 </div>
                 <!-- /#profile -->
             </div>
@@ -77,15 +75,13 @@
                         </div>
                         <!-- /.skillicon -->
                         <div class="skillname">
-                            <h4>HTML5/CSS5</h4>
+                            <h4>HTML5/CSS3</h4>
                             <p class="stars">★★★★☆</p>
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>文法を理解したうえで、マークアップができます。</p>
-                            <p>
-                            ネイティブ構文は勿論、Bootstrapを使用した効率的なレイアウトも作成できます。
-                            </p>
+                            <p>文法を理解したうえで、デザインをもとに実装ができる。</p>
+                            <p>Flexboxでレスポンシブ対応、Bootstrapを使用した効率的なレイアウト作成ができる。</p>
                         </div>
                         <!-- /.skilldetail -->
                     </li>
@@ -100,8 +96,9 @@
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>基本的な文法を学習後、ネイティブ構文で作成物（神経衰弱）を作り、DOM操作や制御文についての理解を深めました。</p>
-                            <p>また、jQueryでハンバーガーメニューの作成やプラグインを使ったスライドショーも作成できます。</p>
+                            <p>DOM操作や制御文についての理解をして、ネイティブで実装ができる。</p>
+                            <p>また、スライドショーやハンバーガーメニューなどが実装できる。</p>
+                            <p>ネイティブの実装のほかに、jQueryを使用して実装ができる。</p>
                         </div>
                         <!-- /.skilldetail -->
                     </li>
@@ -112,15 +109,12 @@
                         <!-- /.skillicon -->
                         <div class="skillname">
                             <h4>PHP</h4>
-                            <p class="stars">★★★☆☆</p>
+                            <p class="stars">★★★★☆</p>
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>
-                                SESSIONやPOST・GETを理解し、サーバーサイドで処理を実装できます。
-                                ショッピングカート機能の実装や、ブラウザから入力されたデータをデータベースに登録、また、登録されたデータの取得も実装できる為、
-                                動的なWEBページを作成できます
-                            </p>
+                            <p>クライアントサイド、サーバサイド間のデータ受け渡し、GET、POST、セッションなどを理解。</p>
+                            <p>CRUD処理やバリデーションなどの基本機能をネイティブで実装できる。</p>
                         <!-- /.skilldetail -->
                     </li>
                     <li class="flex_skill">
@@ -130,13 +124,12 @@
                         <!-- /.skillicon -->
                         <div class="skillname">
                             <h4>MySQL</h4>
-                            <p class="stars">★★★☆☆</p>
+                            <p class="stars">★★★★☆</p>
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>
-                                SQLを理解し、PHPと連携させて、データベースから必要な情報だけを取り出す事や、データの新規追加、更新等の操作をすることができます。
-                            </p>
+                            <p>PHPとDBを連携させてCRUD処理の実装ができる。</p>
+                            <p>またWHERE、JOIN、サブクエリなどを用いて効率よく必要なデータを取得できる。</p>
                         </div>
                         <!-- /.skilldetail -->
                     </li>
@@ -151,10 +144,8 @@
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>
-                            XDを使用しワイヤーフレーム、プロトタイプの作成ができます。
-                            自分でデザインしてプロトタイプを作成することで、WEBサイトの作成効率を高めることができます。
-                            </p>
+                            <p>ワイヤーフレームやプロトタイプの作成ができる。</p>
+                            <p>インタラクション、アニメーションも実装でき、Webサイト作成効率を向上させる。</p>
                         </div>
                         <!-- /.skilldetail -->
                     </li>
@@ -169,17 +160,34 @@
                         </div>
                         <!-- /.skillname -->
                         <div class="skilldetail">
-                            <p>ExcelはMOSを取得済。</p>
-                            <p>前職の経験から分かりやすいグラフや表を効率よく作ることができます。
-                                Powerpointは基本的な操作は勿論、アニメーションなどの設定もできます。
-                            </p>
+                            <p>Microsoft Office Specialist 2010(Excel)取得済み。</p>
+                            <p>前職の経験で、分かりやすい文書・表・プレゼンテーションを効率よく作成ができる。</p>
                         </div>
                         <!-- /.skilldetail -->
                     </li>
                     <li class="flex_skill2">
                         <h3>その他のスキル</h3>
                         <ul>
-                            <li>Microsoft Office Specialist 2010(Excel)</li>
+                            <a href="./asset/light_knitting_er.pdf" target="_blank" rel="noopener">
+                                <li>・A5:SQL Mk-2を用いた、テーブル設計、ER図の作成</li>
+                            </a>
+                            <a href="https://github.com/tbh0013" target="_blank" rel="noopener">
+                            <li>・Git, GitHubを用いたバージョン管理</li>
+                            </a>
+                            <a href="https://light-knitting.herokuapp.com/" target="_blank" rel="noopener">
+                            <li>・Heroku, GitHub pagesを用いたデプロイ作業</li>
+                            </a>
+                            <a href="#light_knitting_documents">
+                            <li>・仕様書、サイト構成図、ER図、プロトタイプなどの<br>ドキュメント作成</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="flex_skill2">
+                        <h3>現在学習している内容</h3>
+                        <ul>
+                            <li>・Laravel</li>
+                            <li>・Vue</li>
+                            <li>・Dockerを用いた開発環境の構築方法</li>
                         </ul>
                     </li>
                 </ul>
@@ -202,15 +210,12 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail">
-                            <p class="lk_bold">WEBサイト</p>
-                            <p>友人のハンドメイド作品を販売するECサイトを制作しました。</p>
-                            <p>
-                            実践に近い形で作成する為に、始めにドキュメントやAdobeXDによるUXデザインの作成等を行いました。
-                            また、実用的なWEBサイトにする為に、MVCモデルを理解し、PHPのネイティブ構文で作成しました。
-                            製品一覧ページでは、データベースからデータを取得し、加工して表示しています。
-                            また、注文情報をデータベースへ登録できるように実装して、実際に購入画面まで進むことができます。
-                            レイアウトはBootstrapを使い、ユーザーが操作しやすいレイアウトにしています。
-                            </p>
+                            <p class="lk_bold"> ユーザー側サイト</p>
+                            <p>友人のハンドメイド作品を販売するECサイトを作成しました。</p>
+                            <p>仕様書、サイト構成図、ER図、プロトタイプ作成を行い、設計に基づいた実装を行いました。</p>
+                            <p>バックエンドではPHPを使用し、フレームワークは用いず、フルスクラッチで実装しました。</p>
+                            <p>フロントではjQueryを使用し、レイアウトはBootstrapを用いてレスポンシブデザインに対応しています。</p>
+                            <p>また、Herokuでデプロイを行い、Gitでバージョン管理しています。</p>
                             <div class="viewmore">
                             <a href="https://light-knitting.herokuapp.com/" target="_blank" rel="noopener">View More</a>
                             </div>
@@ -222,28 +227,28 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail" style="margin-top: 10px;">
-                            <p class="lk_bold">管理画面</p>
-                            <p>
-                                誰でも直感的に操作できることを意識して制作しました。<br>
-                                様々な入力方法等を想定して、バリデーションの実装も行いました。<br>
-                                ログイン情報<br>
-                                メールアドレス： knit@admin.com<br>
-                                パスワード: 0000
+                            <p class="lk_bold">管理側サイト</p>
+                            <p>ユーザー側サイトと連携して商品やお知らせの追加、購入履歴の閲覧機能などを実装しました。</p>
+                            <p>そのほかログイン機能、バリデーション機能、CRUD処理、画像アップロード処理などを実装。</p>
+                            <br>
+                            <p>【ログイン情報】</p>
+                            <p>メールアドレス： knit@admin.com</p>
+                            <p>パスワード: 0000</p>
                             </p>
                             <div class="viewmore">
                                 <a href="http://light-knitting.herokuapp.com/admin/" target="_blank" rel="noopener">View More</a>
                             </div>
                             <!-- /.viewmore -->
                         </div>
-                        <div class="workdetail_sub">
+                        <div class="workdetail_sub" id="light_knitting_documents">
                             <div class="workdetail_doc" style="margin-top: 10px; ">
-                                <p class="lk_bold">ドキュメント</p>
+                                <p class="lk_bold">仕様書</p>
                                 <div class="viewmore">
                                     <a class="lk_view" href="./asset/light_knitting_doc.pdf" target="_blank" rel="noopener">View More</a>
                                 </div>
                             </div>
                             <div class="workdetail_doc" style="margin-top: 10px;">
-                                <p class="lk_bold">ページ構成図</p>
+                                <p class="lk_bold">サイト構成図</p>
                                 <div class="viewmore">
                                     <a class="lk_view" href="./asset/LightKnitting_diagram.pdf" target="_blank" rel="noopener">View More</a>
                                 </div>
@@ -255,7 +260,7 @@
                                 </div>
                             </div>
                             <div class="workdetail_doc" style="margin-top: 10px;">
-                                <p class="lk_bold">プロトタイプ</p>
+                                <p class="lk_bold">プロトタイプ(XD)</p>
                                 <div class="viewmore">
                                     <a class="lk_view" href="https://xd.adobe.com/view/5d03231b-f33b-4ee2-b52b-8c7b19e94ea5-0850/" target="_blank" rel="noopener">View More</a>
                                 </div>
@@ -271,10 +276,10 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail">
-                            <p>
-                            JavaScriptの理解を深める為に、自分で作成物を決めて作りました。<br>
-                            DOM関数を利用して、カウンターの書き換え及びログの追加や、条件分岐処理によるカードの表示を工夫し、実際に遊ぶことができます。
-                            </p>
+                            <p>友人の子どもに遊んでもらうために、Webブラウザ上で遊べるゲームを制作。</p>
+                            <p>実際のルールを遵守して使いやすさを意識し、先に要件定義をして仕様書を作成した上で実装した。</p>
+                            <p>ネイティブのJavaScriptでDOM操作や条件分岐などを理解しながら実装した。</p>
+                            <p>レスポンシブに対応済み。</p>
                             <div class="viewmore">
                             <a href="https://tbh0013.github.io/memory_game/" target="_blank" rel="noopener">View More</a>
                             </div>
@@ -297,10 +302,9 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail">
-                            <p>知人のバンド公式サイトを課題として作成しました。</p>
-                            <p>
-                            jQueryでスライドショーやハンバーガーメニューを作り、動きがあるサイトを作成しました。
-                            </p>
+                            <p>知人のバンド公式サイトを作成した。</p>
+                            <p> バンドイメージにあったサイトを実現するために、ユーザーターゲット、UI設計を考えて、仕様書を作成した上で実装を行った。</p>
+                            <p>ネイティブのJavaScriptで、スライドショーやハンバーガーメニューなどを実装し、バンドならではの躍動感あるサイトになった。</p>
                             <div class="viewmore">
                                 <a href="https://tbh0013.github.io/the_cork/"  target="_blank" rel="noopener">View More</a>
                             </div>
@@ -327,12 +331,9 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail">
-                            <p>
-                            自分で架空の会社を考えて、コーポレートサイトを作りました。
-                            </p>
-                            <p>
-                            レスポンシブによるレイアウト崩れがないように工夫して作りました。
-                            </p>
+                            <p>水槽のレンタルサービス事業を行う会社のコーポレートサイト。</p>
+                            <p>架空の会社を想定して、様々なコーポレートサイトを調べ、必要な項目を洗い出した。</p>
+                            <p>全ページレスポンシブ対応済み。トップページのメニューはFlexboxを用いてどのデバイスでもレイアウト崩れをしないように実装。</p>
                             <div class="viewmore">
                             <a href="https://tbh0013.github.io/sl_aquarium/" target="_blank" rel="noopener">View More</a>
                             </div>
@@ -350,12 +351,10 @@
                         </div>
                         <!-- /.pageview -->
                         <div class="workdetail">
-                            <p>
-                            HTML,CSSを学習後、作成しました。
-                            </p>
-                            <p>
-                            メディアクエリを理解し、画面幅によって適用するスタイルを切り替えて、レスポンシブデザインを実現しました。
-                            </p>
+                            <p>カフェの店舗情報サイト。</p>
+                            <p>架空のお店を想定して、お店の販促に必要な情報を洗い出して作成。</p>
+                            <p>全ページレスポンシブ対応に設計。PCとスマートフォンでブレイクポイントを設けた。</p>
+                            <p>PCビューの場合は左横にメニューを配置、タブレット、スマホビューの場合は画面上にメニューを配置されるように実装。</p>
                             <div class="viewmore">
                             <a href="https://tbh0013.github.io/cafe_alps/" target="_blank" rel="noopener">View More</a>
                             </div>
@@ -372,12 +371,8 @@
 
         <footer>
             <div id="afterword">
-                <p>
-                Web制作においてまだまだ未熟な部分ばかりですが、常に現状に満足せず、技術を学び続ける姿勢を持ち続けて、継続した努力をして参ります。
-                </p>
-                <p>
-                そして、クライアントの考えを具現化する事、また、新たな提案も行えるWebエンジニアを目指し邁進します。
-                </p>
+                <p>Web開発においてまだまだ未熟な部分ばかりですが、常に現状に満足せず、技術を学び続ける姿勢を持ち続けて、継続した努力をしてまいります。</p>
+                <p>そして、常に顧客意識・目標意識をもち、最善の努力を尽くすとともにエンジニアとしての技術・知見を高めて貢献してまいります</p>
                 <p>最後までご覧頂きありがとうございました。</p>
             </div>
             <!-- /#afterword -->

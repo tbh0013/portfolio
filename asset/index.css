@@ -1,7 +1,6 @@
 /* CSS Document */
 a {
     text-decoration: none;
-    color: #ddd;
 }
 
 html {
@@ -113,6 +112,11 @@ nav a:hover {
     color: rgba(0, 0, 240, 0.6);
 }
 
+.nav_link {
+    text-decoration: none;
+    color: #ddd;
+}
+
 /*各セクション*/
 
 #about,
@@ -181,12 +185,15 @@ h2 {
 
 .github {
     width: 30%;
-    display: inline-block;
+    margin: 0px auto;
 }
 
 .github_icon {
     width: 60%;
-    vertical-align: top;
+}
+
+.namezone {
+    width: 100%;
 }
 
 .flex_break {
